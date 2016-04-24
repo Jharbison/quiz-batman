@@ -13,7 +13,7 @@
 	src: url("batman-font.ttf");
 }
 
-.header {
+.header, .footer {
 	background-color: #505050;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -59,7 +59,7 @@ h3 {
 	width: 30rem;
 	height: 3rem;
 	font-size: 18px;
-	margin: 0 0 5px 100px;
+	margin: 2px 150px;
 	border-radius: 4px;
 	border: 1px solid black;
 	box-shadow: 0px 0px 4px 1px;
