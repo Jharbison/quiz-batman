@@ -15,28 +15,42 @@
 	</div>
 	<div class="main-game">
 
+		<div id="welcome-box">
+			<h2>Welcome To Gotham City</h2>
+			<button class="begin-quiz">Begin</button>
+
+		</div>
+
 		<div class="question-box">
 			<ul>
-				<li class="question">Who is Batman's Secret Identity?</li>
+				<li class="question"></li>
 			</ul>
 		</div>
-		<div class="choices"></div>
+		<div class="choices">
 			<ul>
 				<li>
-					<button class="answers">Bruce Wayne</button>
+					<button class="answers" id="0"></button>
 				</li>
 				<li>
-					<button class="answers">James Gordon</button>
+					<button class="answers" id="1"></button>
 				</li>
 				<li>
-					<button class="answers">Clark Kent</button>
+					<button class="answers" id="2"></button>
 				</li>
 				<li>
-					<button class="answers">Dick Grayson</button>
+					<button class="answers" id="3"></button>
 				</li>
 			</ul>
-		
+		</div>
+		<button class="submit">Submit</button>
 	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js">
+	</script>
+	<script type="text/javascript" src="js/app.js"></script>
+	
 	<div class="footer"></div>	
 </body>
 </html>
