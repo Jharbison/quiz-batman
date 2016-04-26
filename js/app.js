@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	var q1 = {
 		q: "In which comic book did Batman first appear?",
-		a: ["Batman #1, Detective Comics #1, The Dark Knight, Detective Comics #27"],
+		a: ["Batman #1, Detective Comics #1, The Dark Knight #3, Detective Comics #27"],
 		ca: 3
 	}
 
@@ -45,6 +45,8 @@ $('.begin-quiz').click(function(event){
 	$('.question').show();
 	$('.answers').show();
 	$('.submit').show();
+	displayQuestion;
+	
 })
 
 function displayQuestion() {
@@ -53,10 +55,11 @@ function displayQuestion() {
 	} else {
 		currentQuestion = questions[qCount];
 		$('.question').html(currentQuestion.q);
-		var html = " ";
+		var answerHtml = "";
 		for (var i = 0; i < currentQuestion.a.length; i++) {
-			html += "<li><button class='answers'>" +currentQuestion.a[i]+"</button></li>";
+			answerHtml += "<li><button class='answers'>" +currentQuestion.a[i]+"</button></li>";
 		}
+		$('.answers').html(answerHtml);
 	}
 
 }
