@@ -124,8 +124,8 @@ h2 {
 	padding-top: 12px;
 }
 
-.checked {
-	color: red;
+.answers button.checked {
+	box-shadow: 0px 0px 0px 5px;
 }
 
  ul {

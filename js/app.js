@@ -83,12 +83,12 @@ $('.submit').on('click',function() {
 		console.log("That is not correct");
 	}
 	qCount++; displayQuestion();
-})
+});
 
 $('.try-again').on('click', function() {
 	console.log("try-again")
 	tryAgain();
-	})
+	});
 
 	var tryAgain = function(){ 
 	$('#complete-box').hide();
